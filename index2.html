@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <title>فروشگاه اینترنتی دیجی کالا</title>
+    <fav ></fav>
+</head>
+<body>
+    <div class="bannercontainer">
+        <img class="bannertop" src="./assets/images/aa11c9fcd1a061b171fab7e3865fe8033095be70_1686666584.webp"></img>
+    </div>
+<nav>
+
+<header>
+<div class="nav-container" id="navC">
+    <span class="bars d-lg-none" onclick="showmenuMD()">
+        <i class="fas fa-bars" ></i>
+      
+    </span>
+<div class="rightnav">
+  
+  <div class="d-flex logo-container ">
+    <img src="assets/images/logo.jpg" class="logo">
+  </div>
+<div class="searchcontainer d-none d-lg-block ">
+ <div class="serach" onclick="showresultbox()">
+  <i class="fas fa-search  search-icon"></i>
+  <input type="search" placeholder="جستجو" class="searchinput">
+ </div>
+ <div class="result-box" onmouseleave="Hideresultbox()">
+  <img src="assets/images/search.webp" style="width: 85%; margin-left: 50px; margin-bottom: 15px; ">
+  <div class="lastsearch">
+    <img src="assets/images/56.png">
+    <div class="recentsearch">
+      <img src="assets/images/55.png">
+      آخرین جستجوهای شما
+    
+    </div>
+  </div>
+  <hr>
+  <div class="keysearch">
+    <span>بادی اسپلش شون</span>
+    <span>کرم ضد آفتاب</span>
+    <span>لپ تاپ</span>
+    <span>گوشی موبایل</span>
+    <span>ایرپاد</span>
+    <span>میز اتو</span>
+    <span>فر توکار</span>
+    <span>میز ناهارخوری</span>
+    <span>تابلو عکس</span>
+    <span>بادی اسپلش شون</span>
+    <span>کرم ضد آفتاب</span>
+    <span>لپ تاپ</span>
+    <span>گوشی موبایل</span>
+    <span>ایرپاد</span>
+    <span>میز اتو</span>
+    <span>فر توکار</span>
+    <span>میز ناهارخوری</span>
+    <span>تابلو عکس</span>
+  </div>
+
+
+</div>
+</div>
+</div>
+
+    <div class="shopicon-container " id="shopiconCo">
+        <span class="log">
+           <i class="fas fa-arrow-circle-left arrow" ></i>
+            <a href="login/login.html" target="_blank">           ورود | ثبت نام
+                </a>
+        </span>
+        <span class="">
+            |
+            <i class="fas fa-shopping-bag bag"></i>
+        </span>
+    </div>
+
+
+    <span class="d-lg-none">
+        <i class="fa fa-question-circle "></i>
+    </span>
+
+</div>
+
+<div class="border d-lg-none"></div>
+
+
+
+<div class="subnav-hide" id="subnavhide">
+
+
+<div class="sub-nav">
+
+
+ <div class="searchcontainer d-lg-none " id="searchco">
+      <div class="serach" onclick="showresultboxtwo()" style="width: 500px;">
+       <i class="fas fa-search"></i>
+       <input type="search" placeholder="جستجو" class="searchinput">
+      </div>
+      <div class="result-box">
+       <img src="assets/images/search.webp" style="width: 85%; margin-left: 50px; margin-bottom: 15px; ">
+       <div class="lastsearch">
+         <img src="assets/images/56.png">
+         <div class="recentsearch">
+           <img src="assets/images/55.png">
+           آخرین جستجوهای شما
+         
+         </div>
+       </div>
+       <hr>
+       <div class="keysearch">
+         <span>بادی اسپلش شون</span>
+         <span>کرم ضد آفتاب</span>
+         <span>لپ تاپ</span>
+         <span>گوشی موبایل</span>
+         <span>ایرپاد</span>
+         <span>میز اتو</span>
+         <span>فر توکار</span>
+         <span>میز ناهارخوری</span>
+         <span>تابلو عکس</span>
+       </div>
+ 
+ 
+     </div>
+     </div>
+
+    <div class="shopicon-container d-lg-none" style="right: 200px;">
+        <span >
+           <i class="fas fa-arrow-circle-left arrow-left"></i>
+           </span>
+        <span>
+            <i class="fas fa-shopping-bag"></i>
+        </span>
+    </div>
+</div>
+<div class="border d-lg-none"></div>
+
+
+<div class="citycontainer ">
+
+<span class="city">
+  <i class="fas fa-tag"></i>
+  لطفا شهر خود را انتخاب کنید
+</span>
+
+<i class="fas fa-angle-left mr-1 mt-1"></i>
+</div>
+
+<div class="submenu " id="submenu">
+    <ul id="navbar">
+     <span onclick="hidesubmenuMD()"> <i class="fas fa-times mt-5 mr-2"></i></span>
+        <li class="font-weight-bold  drop-one" >
+            <img src="assets/images/2849812_menu_multimedia_bars_media_icon.png"  class="menu-img">
+           <a href="#" class="drop-one" onmouseover="showsubmenu()"> دسته بندی کالا</a>
+
+           <div class="menu-one"  onmouseleave="hidesubmenu()" id="menu-one">
+            <ul class="firstmenu">
+                <li class="tab-btn showtab">
+                  <a href="#">
+                    <img src="assets/images/phone.png" style="width: 18px; height: 18px; margin-left: 5px">
+                    موبایل
+                </a>
+              </li>
+              <li class="tab-btn">
+                <a href="#">
+                  <img src="assets/images/laptop.png" style="width: 18px; height: 18px; margin-left: 5px">
+                  کالای دیجیتال
+              </a>
+            </li>
+            <li  class="tab-btn">
+              <a href="#">
+                <img src="assets/images/furniture.png" style="width: 18px; height: 18px; margin-left: 5px">
+               خانه و آشپزخانه
+            </a>
+          </li>
+          <li class="tab-btn">
+            <a href="#">
+              <img src="assets/images/clothe.png" style="width: 18px; height: 18px; margin-left: 5px">
+              مد و پوشاک
+          </a>
+        </li>
+        <li class="tab-btn">
+          <a href="#">
+            <img src="assets/images/supermarket.png" style="width: 18px; height: 18px; margin-left: 5px">
+           کالاهای سوپرمارکتی
+        </a>
+      </li>
+      <li class="tab-btn">
+        <a href="#">
+          <img src="assets/images/stationary.png" style="width: 18px; height: 18px; margin-left: 5px">
+          کتاب، لوازم التحریر هنر
+      </a>
+    </li>
+    <li class="tab-btn">
+      <a href="#">
+        <img src="assets/images/baby.png" style="width: 18px; height: 18px; margin-left: 5px">
+        اسباب بازی، کودک و نوزاد
+    </a>
+  </li>
+  <li class="tab-btn">
+    <a href="#">
+      <img src="assets/images/health.png" style="width: 18px; height: 18px; margin-left: 5px">
+      زیبایی و سلامت
+  </a>
+</li>
+<li class="tab-btn">
+  <a href="#">
+    <img src="assets/images/camp.png" style="width: 18px; height: 18px; margin-left: 5px">
+    ورزش و سفر
+</a>
+</li>
+<li class="tab-btn">
+  <a href="#">
+    <img src="assets/images/tool.png" style="width: 18px; height: 18px; margin-left: 5px">
+    ابزارآلات و تجهیزات
+</a>
+</li>
+<li class="tab-btn">
+  <a href="#">
+    <img src="assets/images/car.png" style="width: 18px; height: 18px; margin-left: 5px">
+    خودرو و موتورسیکلت
+</a>
+</li>
+<li class="tab-btn">
+  <a href="#">
+    <img src="assets/images/traditonal.png" style="width: 18px; height: 18px; margin-left: 5px">
+    محصولات بومی و محلی
+</a>
+</li>
+<div class="menu-border"></div>
+            </ul>
+
+
+            <div class="content-box">
+              <div class="content showtab">
+                <ul>
+                  <li>
+                    <h5 class="text-danger">گوشی بر اساس برند
+                      <i class="fas fa-angle-down"></i>
+
+
+
+                    </h5>
+                  </li>
+                  <li><a href="#">سامسونگ</a></li>
+                  <li><a href="#">اپل</a></li>
+                  <li><a href="#">شیائومی</a></li>
+                  <li><a href="#">هوآوی</a></li>
+              </ul>
+              <ul>
+                  <li>
+                    <h5 class="text-danger">گوشی بر اساس قیمت
+                      <i class="fas fa-angle-down"></i>
+                    </h5>
+                  </li>
+                  <li><a href="#">موبایل ارزان</a></li>
+                  <li><a href="#">موبایل تا 7 مییون</a></li>
+                  <li><a href="#">موبایل تا 20 میلیون</a></li>
+                  <li><a href="#">موبایل تا 50 میلیون</a></li>
+              </ul>
+              <ul>
+                  <li>
+                   <h5 class="text-danger">رزولوشن عکس
+                    <i class="fas fa-arrow-down"></i>
+                   </h5>
+                  </li>
+                  <li><a href="#">تا 13 مگاپیکسل</a></li>
+                  <li><a href="#"> تا 16 مگاپیکسل</a></li>
+                  <li><a href="#"> تا 16 مگاپیکسل</a></li>
+                  <li><a href="#">تا 16 مگاپیکسل</a></li>
+                  <li><a href="#">تا 13 مگاپیکسل</a></li>
+                  <li><a href="#"> تا 16 مگاپیکسل</a></li>
+                  <li><a href="#"> تا 16 مگاپیکسل</a></li>
+                  <li><a href="#">تا 16 مگاپیکسل</a></li>
+              </ul>
+              <ul>
+                  <li>
+                    <h5 class="text-danger">گوشی بر اساس کاربرد
+                      <i class="fas fa-arrow-down"></i>
+                    </h5>
+                  </li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+
+              </ul>
+              </div>
+
+
+              <div class="content">
+                <ul>
+                  <li>
+                    <h5 class="text-danger">
+                      همه موارد در این دسته
+                      <i class="fas fa-angle-down"></i>
+                    </h5>
+                  </li>
+                  <li><a href="#">کیف و کاور گوشی</a></li>
+                  <li><a href="#">پاور بانک</a></li>
+                  <li><a href="#">پایه نگهدارنده گوشی</a></li>
+                  <li><a href="#">مچ بند ساعت هوشمند</a></li>
+              </ul>
+              <ul>
+                  <li>
+                    <h5 class="text-danger">
+                      کالاهای الکترونیک
+                      <i class="fas fa-angle-down"></i>
+                    </h5>
+                  </li>
+                  <li><a href="#">کارت های هدیه هوشمند
+                  </a></li>
+                  <li><a href="#">تلوزیون
+                  </a></li>
+                  <li><a href="#">موبایل تا 20 میلیون</a></li>
+                  <li><a href="#">موبایل تا 50 میلیون</a></li>
+              </ul>
+              <ul>
+                  <li>
+                   <h5>رزولوشن عکس</h5>
+                  </li>
+                  <li><a href="#">تا 13 مگاپیکسل</a></li>
+                  <li><a href="#"> تا 16 مگاپیکسل</a></li>
+                  <li><a href="#"> تا 16 مگاپیکسل</a></li>
+                  <li><a href="#">تا 16 مگاپیکسل</a></li>
+                  <li><a href="#">تا 13 مگاپیکسل</a></li>
+                  <li><a href="#"> تا 16 مگاپیکسل</a></li>
+                  <li><a href="#"> تا 16 مگاپیکسل</a></li>
+                  <li><a href="#">تا 16 مگاپیکسل</a></li>
+              </ul>
+              <ul>
+                  <li>
+                    <h5>گوشی بر اساس کاربرد</h5>
+                  </li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+
+              </ul>
+              </div>
+
+
+              <div class="content">
+                <ul>
+                  <li>
+                    <h5>انواع کالاهای خانه</h5>
+                  </li>
+                  <li><a href="#">فرش </a></li>  
+                  <li><a href="#">مبل</a></li>
+                  <li><a href="#">یخچال</a></li>
+                  <li><a href="#">تلوزیون</a></li>
+              </ul>
+              <ul>
+                  <li>
+                    <h5>گوشی بر اساس قیمت</h5>
+                  </li>
+                  <li><a href="#">موبایل ارزان</a></li>
+                  <li><a href="#">موبایل تا 7 مییون</a></li>
+                  <li><a href="#">موبایل تا 20 میلیون</a></li>
+                  <li><a href="#">موبایل تا 50 میلیون</a></li>
+              </ul>
+              <ul>
+                  <li>
+                   <h5>رزولوشن عکس</h5>
+                  </li>
+                  <li><a href="#">تا 13 مگاپیکسل</a></li>
+                  <li><a href="#"> تا 16 مگاپیکسل</a></li>
+                  <li><a href="#"> تا 16 مگاپیکسل</a></li>
+                  <li><a href="#">تا 16 مگاپیکسل</a></li>
+                  <li><a href="#">تا 13 مگاپیکسل</a></li>
+                  <li><a href="#"> تا 16 مگاپیکسل</a></li>
+                  <li><a href="#"> تا 16 مگاپیکسل</a></li>
+                  <li><a href="#">تا 16 مگاپیکسل</a></li>
+              </ul>
+              <ul>
+                  <li>
+                    <h5>گوشی بر اساس کاربرد</h5>
+                  </li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+                  <li><a href="#"></a>گوشی کاربردی و اقتصادی</li>
+
+              </ul>
+              </div>
+
+
+
+            </div>
+        </div>
+
+            </li>
+                 
+         
+
+        <li>
+            <img src="assets/images/9870475_grocery_store_bakery_supermarket_market_icon.png"  class="menu-img">
+            سوپرمارکت      
+      </li>
+      <li>
+        <img src="assets/images/8680118_fire_line_icon.png"  class="menu-img">
+        پرفروش ترین ها
+    </li>
+        <li>
+            <img src="assets/images/3702395_coupon_discount_sale_voucher_icon.png" class="menu-img">
+            تخفیف ها وپیشنهادها
+        </li>
+       
+        <li>
+            <img src="assets/images/9104347_discount_tag_sale_label_sign_icon.png" class="menu-img">
+            شگفت انگیز
+                </li>
+        <li>
+سوالی دارید؟
+        </li>
+        <li>
+           در دیجی کالا بفروشید!
+        </li>
+    </ul>
+</div>
+
+
+
+</div>
+
+</header>
+</nav>
+
+<div class="line"></div>
+
+
+
+
+
+<main>
+
+<div class="bodycontainer">
+
+
+  <div class="slider">
+    <div class="slider-items">
+        <div class="item active">
+          <img src="assets/images/90.webp" class="img">
+        </div>
+        <div class="item">
+          <img src="assets/images/91.webp" class="img">
+           
+        </div>
+        <div class="item">
+          <img src="assets/images/92.webp" class="img">
+           
+        </div>
+    </div>
+
+
+    <div class="controls">
+        <div class="next"><i class="fas fa-chevron-right"></i></div>
+        <div class="prev"><i class="fas fa-chevron-left"></i></div>
+    </div>
+
+
+    <div class="progress">
+    </div>
+
+</div>
+
+
+</div>
+
+<div class="container">
+
+
+
+  <div class="storycontainer">
+    <div class="story">
+  
+<div class="row">
+  <div class="story-item col-3 col-sm-3 col-lg-auto">
+    <a href="#">
+      <img src="assets/images/1.png">
+    </a>
+  <a href="#">  خرید عمده و سازمانی
+  </a>
+  </div>
+  <div class="story-item col-3 col-sm-3 col-lg-auto">
+    <a href="#">
+      <img src="assets/images/2.png">
+    </a>
+    <a href="#">
+      دیجی پلاس 
+     </a>
+  </div>
+  <div class="story-item col-3 col-sm-3 col-lg-auto">
+    <a href="#">
+      <img src="assets/images/3.png">
+    </a>
+    <a href="#">
+      حراج استایل
+     </a>
+  </div>
+  <div class="story-item col-3 col-sm-3 col-lg-auto" >
+    <a href="#">
+      <img src="assets/images/4.png">
+    </a>
+    <a href="#">
+     لاکی باکس
+     </a>
+  </div>
+  <div class="story-item col-3 col-sm-3 col-lg-auto">
+    <a href="#">
+      <img src="assets/images/5.png">
+     
+    </a>
+    <a href="#">
+      امتیاز بگیر
+      </a>
+  </div>
+  <div class="story-item col-3 col-sm-3 col-lg-auto">
+    <a href="#">
+      <img src="assets/images/6.png">
+      
+    </a>
+    <a href="#">
+      دیجی کالا جت
+      </a>
+  </div>
+  <div class="story-item col-3 col-sm-3 col-lg-auto">
+    <a href="#">
+      <img src="assets/images/5.png">
+     
+    </a>
+    <a href="#">
+      امتیاز بگیر
+      </a>
+  </div>
+  <div class="story-item col-3 col-sm-3 col-lg-auto">
+    <a href="#">
+      <img src="assets/images/2.png">
+    </a>
+    <a href="#">
+      دیجی پلاس 
+     </a>
+  </div>
+  <!-- <div class="story-itemdot threedot ">
+    <a href="#" class="">
+      <img src="assets/images/dot.png" class="dotimg">  </a>
+  </div> -->
+</div>
+  
+    </div>
+  </div>
+
+
+  <div class="slide-container">
+    <div id="right-slide" class="arrow">
+        <i class="fas fa-chevron-right text-light"></i>
+    </div>
+  
+        <section class="container" id="slider">
+             <div class="thumbnail">
+                  <img src="assets/images/p.svg" class="suggest"  style="width: 100px; height: 40px;">
+                 <img src="assets/images/12.webp" alt="">
+                 <div class="product-details">
+                    <h2>ایکس باکس</h2>
+                    <p><span>5220000</span>1900000</p>
+                    <a href="#">افزودن به سبد خرید</a>
+                 </div>
+             </div>
+             <div class="thumbnail">
+              <img src="assets/images/p.svg" class="suggest" style="width: 100px; height: 40px;">
+                <img src="assets/images/13.webp" alt="">
+                <div class="product-details">
+                   <h2>اسپیکر</h2>
+                   <p><span>265000</span>11000</p>
+                   <a href="#">افزودن به سبد خرید</a>
+                </div>
+            </div>
+            <div class="thumbnail">
+              <img src="assets/images/p.svg" class="suggest" style="width: 100px; height: 40px;">
+                <img src="assets/images/14.webp" alt="">
+                <div class="product-details">
+                   <h2>سرخ کن</h2>
+                   <p><span>563000</span>196000</p>
+                   <a href="#">افزودن به سبد خرید</a>
+                </div>
+            </div>
+            <div class="thumbnail">
+              <img src="assets/images/p.svg" class="suggest" style="width: 100px; height: 40px;">
+                <img src="assets/images/16.webp" alt="">
+                <div class="product-details">
+                   <h2>تلسکوپ</h2>
+                   <p><span>220000</span>180000</p>
+                   <a href="#">افزودن به سبد خرید</a>
+                </div>
+            </div>
+            <div class="thumbnail">
+              <img src="assets/images/p.svg" class="suggest" style="width: 100px; height: 40px;">
+                <img src="assets/images/17.webp" alt="">
+                <div class="product-details">
+                   <h2>عینک</h2>
+                   <p><span>220000</span>180000</p>
+                   <a href="#">افزودن به سبد خرید</a>
+                </div>
+            </div>
+            <div class="thumbnail">
+              <img src="assets/images/p.svg" class="suggest" style="width: 100px; height: 40px;">
+                <img src="assets/images/18.webp" alt="">
+                <div class="product-details">
+                   <h2>دستگاه قند خون</h2>
+                   <p><span>220000</span>180000</p>
+                   <a href="#">افزودن به سبد خرید</a>
+                </div>
+            </div>
+            <div class="thumbnail">
+              <img src="assets/images/p.svg" class="suggest" style="width: 100px; height: 40px;">
+                <img src="assets/images/19.webp" alt="">
+                <div class="product-details">
+                   <h2>موبایل</h2>
+                   <p><span>220000</span>180000</p>
+                   <a href="#">افزودن به سبد خرید</a>
+                </div>
+            </div>
+            <div class="thumbnail">
+              <img src="assets/images/p.svg" class="suggest" style="width: 100px; height: 40px;">
+                <img src="assets/images/20.webp" alt="">
+                <div class="product-details">
+                   <h2>تلوزیون</h2>
+                   <p><span>220000</span>180000</p>
+                   <a href="#">افزودن به سبد خرید</a>
+                </div>
+            </div>
+            <div class="thumbnail">
+              <img src="assets/images/p.svg" class="suggest" style="width: 100px; height: 40px;">
+                <img src="assets/images/21.webp" alt="">
+                <div class="product-details">
+                   <h2>شارژر</h2>
+                   <p><span>220000</span>180000</p>
+                   <a href="#">افزودن به سبد خرید</a>
+                </div>
+            </div>
+            <div class="thumbnail">
+              <img src="assets/images/p.svg" class="suggest" style="width: 100px; height: 40px;">
+                <img src="assets/images/22.webp" alt="">
+                <div class="product-details">
+                   <h2> اسپری حالت دهنده مو</h2>
+                   <p><span>220000</span>180000</p>
+                   <a href="#">افزودن به سبد خرید</a>
+                </div>
+            </div>
+        </section>
+  
+  
+    <div id="left-slide" class="arrow">
+        <i class="fas fa-chevron-left text-light"></i>
+    </div>
+  </div>
+
+  <div class="marketcontainer">
+    <div class="supermarket">
+      <a href="#">
+      <img src="assets/images/super.PNG">
+    </a>
+    </div>
+  </div>
+
+
+  <div class="shop-container">
+  <div class="row">
+    <a href="#" class="shop-item col-6 col-md-6 col-lg-auto">
+      <img src="assets/images/50.webp">
+    </a>
+    <a href="#" class="shop-item col-6 col-md-6 col-lg-auto">
+      <img src="assets/images/51.webp">
+    </a>
+    <a href="#" class="shop-item col-6 col-md-6 col-lg-auto">
+      <img src="assets/images/52.webp">
+    </a> 
+    <a href="#" class="shop-item col-6 col-md-6 col-lg-auto">
+      <img src="assets/images/53.webp">
+    </a>
+  </div>
+  </div>
+
+  <div class="categorycontainer">
+  
+    <h2>دسته بندی های دیجی کالا</h2>
+   <div class="digicategory row">
+  
+   
+     <div class="category-item col-lg-2 col-md-3 col-sm-4  col-4">
+       <img src="assets/images/40.webp">
+       <a href="#">موبایل</a>
+     </div>
+     <div class="category-item col-lg-2 col-md-3 col-sm-4 col-4">
+       <img src="assets/images/41.webp">
+       <a href="#">کالای دیجیتال</a>
+     </div>
+     <div class="category-item col-lg-2 col-md-3 col-sm-4 col-4">
+       <img src="assets/images/42.webp">
+       <a href="#">خانه و آشپزخانه</a>
+     </div>
+     <div class="category-item col-lg-2 col-md-3 col-sm-4 col-4">
+       <img src="assets/images/43.webp">
+       <a href="#">مد و پوشاک</a>
+     </div>
+     <div class="category-item col-lg-2 col-md-3 col-sm-4 col-4">
+       <img src="assets/images/44.webp">
+       <a href="#">کالاهای سوپرمارکتی</a>
+     </div>
+     <div class="category-item col-lg-2 col-md-3 col-sm-4 col-4">
+       <img src="assets/images/45.webp">
+       <a href="#">کتاب، لوازم التحریر و هنر</a>
+     </div>
+     <div class="category-item col-lg-2 col-md-3 col-sm-4 col-4">
+       <img src="assets/images/46.webp">
+       <a href="#">اسباب بازی، کوذک و نوزاد</a>
+     </div>
+     <div class="category-item col-lg-2 col-md-3 col-sm-4 col-4">
+       <img src="assets/images/47.webp">
+       <a href="#">زیبایی و سلامت</a>
+     </div>
+     <div class="category-item col-lg-2 col-md-3 col-sm-4 col-4">
+       <img src="assets/images/48.webp">
+       <a href="#">ورزش و سفر</a>
+     </div>
+     <div class="category-item col-lg-2 col-md-3 col-sm-4 col-4">
+       <img src="assets/images/49.webp">
+       <a href="#">ابزارآلات و تجهیزات</a>
+     </div>
+     <div class="category-item col-lg-2 col-md-3 col-sm-4 col-4">
+       <img src="assets/images/38.webp">
+       <a href="#">خودرو و موتورسیکلت</a>
+     </div>
+     <div class="category-item col-lg-2 col-md-3 col-sm-4 col-4">
+       <img src="assets/images/39.webp">
+       <a href="#">محصولات بومی و محلی</a>
+   
+   </div>
+   
+   </div>
+ </div>
+
+ <div class="probannercontainer">
+  <div class="proitem">
+    <img src="assets/images/23.webp">
+  </div>
+  <div class="proitem">
+    <img src="assets/images/24.webp">
+  </div>
+</div>
+
+
+<div class="suggestcontainer">
+  <div class="suggestheader">
+    <h3 class="text-center font-weight-bold mt-4">پیشنهاد های دیجی کالا</h3>
+  </div>
+  
+   <div class="suggestimg">
+    <img src="assets/images/suggestdigi.PNG">
+   </div>
+    
+    </div> 
+
+
+ 
+    <div class="brand-container mt-4">
+    
+      <div id="right-slide-brand" class="arrow">
+          <i class="fas fa-chevron-right text-light"></i>
+      </div>
+      
+          <section class="container-b" id="slider-b">
+           
+               <div class="thumbnail-brand">
+                   <img src="assets/images/peril.png" alt="">
+                   
+               </div>
+               <div class="thumbnail-brand">
+                  <img src="assets/images/digi.png" alt="">
+                  
+              </div>
+              <div class="thumbnail-brand">
+                  <img src="assets/images/bioja.png" alt="">
+                  
+              </div>
+              <div class="thumbnail-brand">
+                  <img src="assets/images/huawei.png" alt="">
+                  
+              </div>
+              <div class="thumbnail-brand">
+                  <img src="assets/images/king.png" alt="">
+                  
+              </div>
+              <div class="thumbnail-brand">
+                  <img src="assets/images/nur.jpg" alt="">
+                 
+              </div>
+              <div class="thumbnail-brand">
+                  <img src="assets/images/my.png" alt="">
+                  
+              </div>
+              <div class="thumbnail-brand">
+                  <img src="assets/images/samsung.jpg" alt="">
+                  
+              </div>
+              <div class="thumbnail-brand">
+                  <img src="assets/images/peril.png" alt="">
+                
+              </div>
+              <div class="thumbnail-brand">
+                  <img src="assets/images/samsung.jpg" alt="">
+                  
+              </div>
+              <div class="thumbnail-brand">
+                <img src="assets/images/my.png" alt="">
+                
+            </div>
+            <div class="thumbnail-brand">
+                <img src="assets/images/samsung.jpg" alt="">
+                
+            </div>
+            <div class="thumbnail-brand">
+                <img src="assets/images/peril.png" alt="">
+              
+            </div>
+            <div class="thumbnail-brand">
+                <img src="assets/images/samsung.jpg" alt="">
+                
+            </div>
+            <div class="thumbnail-brand">
+              <img src="assets/images/samsung.jpg" alt="">
+              
+          </div>
+          <div class="thumbnail-brand">
+            <img src="assets/images/my.png" alt="">
+            
+        </div>
+        <div class="thumbnail-brand">
+            <img src="assets/images/samsung.jpg" alt="">
+            
+        </div>
+        <div class="thumbnail-brand">
+            <img src="assets/images/peril.png" alt="">
+          
+        </div>
+        <div class="thumbnail-brand">
+            <img src="assets/images/samsung.jpg" alt="" class="brand-img">
+            
+        </div>
+          </section>
+    
+    
+      <div id="left-slide-brand" class="arrow">
+          <i class="fas fa-chevron-left text-light"></i>
+      </div>
+    </div>
+
+    <div class="probannercontainer">
+      <div class="proitem">
+        <img src="assets/images/101.webp">
+      </div>
+      <div class="proitem">
+        <img src="assets/images/102.webp">
+      </div>
+    </div>
+
+    <div class="offcontainerbig">
+  
+      <div class="offheader">
+        <h3 class="text-center mb-5">
+          <img src="assets/images/discount.png" style="width: 50px;height: 50px;"> 
+          منتخب محصولات تخفیف و حراج
+          
+        </h3>
+      </div>
+      
+       
+        <div class="offcontainer">
+
+         <div class="row">
+
+          <div class="offitem col-6 col-sm-6 col-md-6 col-lg-3 right-border vr">
+            <img src="assets/images/off1.webp" class="offimg">
+            <img src="assets/images/pos.png" style="width: 25px; margin-left: 160px; cursor: pointer;"  data-toggle="modal" data-target="#exampleModal">
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">محدودیت ارسال کالا</h5>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                  <p class="" style="text-align: right;">  ارسال سریع کالاهای سوپرمارکتی فقط در تهران و کرج امکان‌پذیر است.
+                    با توجه به محدودیت ارسال، آیا مایل هستید این کالا به سبد خرید شما افزوده شود؟</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" style="border:1px solid #ef4056; color: #ef4056;">خیر</button>
+                    <button type="button" class="btn " data-dismiss="modal" style="background: #ef4056; color: white;">بله</button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offcontent">
+              <div class="offcost">
+               <span class="off"> 500000 </span>
+               <span class="text-success"> 35000<img src="assets/images/toman.PNG" class="tooman"></span>
+              </div>
+              <span class="badge badge-danger p-2">43%</span>
+            </div>
+            <p id="timer text-danger" class="text-danger font-weight-bold "></p>
+          </div>
+    
+          <div class="offitem col-6 col-sm-6 col-md-6 col-lg-3">
+            <img src="assets/images/off2.webp" class="offimg">
+            <div class="offcontent">
+              <div class="offcost">
+               <span class="off"> 500000 </span>
+               <span class="text-success"> 35000<img src="assets/images/toman.PNG" class="tooman"></span>
+              </div>
+              <span class="badge badge-danger p-2">43%</span>
+            </div>
+        
+          </div>
+    
+          <div class="offitem col-6 col-sm-6 col-md-6 col-lg-3">
+            <img src="assets/images/off14.webp" class="offimg">
+            <div class="offcontent">
+              <div class="offcost">
+                <span class="off"> 500000 </span>
+               <span class="text-success"> 35000<img src="assets/images/toman.PNG" class="tooman"></span>
+              
+              </div>
+              <span class="badge badge-danger p-2">43%</span>
+            </div>
+            <p class="timer text-danger">زمان باقی‌مانده: <span class="countdown"></span></p>
+          </div>
+    
+          <div class="offitem col-6 col-sm-6 col-md-6 col-lg-3">
+            <img src="assets/images/off3.jpg" class="offimg">
+            <div class="offcontent">
+              <div class="offcost">
+               <span class="off"> 500000 </span>
+               <span class="text-success"> 35000<img src="assets/images/toman.PNG" class="tooman"></span>
+              </div>
+              <span class="badge badge-danger p-2">43%</span>
+            </div>
+            
+          </div>
+    
+          <div class="offitem col-6 col-sm-6 col-md-6 col-lg-3 right-border">
+            <img src="assets/images/off14.webp" class="offimg">
+            <div class="offcontent">
+              <div class="offcost">
+               <span class="off"> 500000 </span>
+               <span class="text-success"> 35000<img src="assets/images/toman.PNG" class="tooman"></span>
+              </div>
+              <span class="badge badge-danger p-2">43%</span>
+            </div>
+            <p class="timer text-danger">زمان باقی‌مانده: <span class="countdown"></span></p>
+    
+          </div>
+          
+          <div class="offitem col-6 col-sm-6 col-md-6 col-lg-3 ">
+            <img src="assets/images/off6.webp" class="offimg">
+            <img src="assets/images/pos.png" style="width: 25px; margin-left: 160px; cursor: pointer;"  data-toggle="modal" data-target="#exampleModal">
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">محدودیت ارسال کالا</h5>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                  <p class="" style="text-align: right;">  ارسال سریع کالاهای سوپرمارکتی فقط در تهران و کرج امکان‌پذیر است.
+                    با توجه به محدودیت ارسال، آیا مایل هستید این کالا به سبد خرید شما افزوده شود؟</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" style="border:1px solid #ef4056; color: #ef4056;">خیر</button>
+                    <button type="button" class="btn " data-dismiss="modal" style="background: #ef4056; color: white;">بله</button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offcontent">
+              <div class="offcost">
+               <span class="off"> 500000 </span>
+               <span class="text-success"> 35000<img src="assets/images/toman.PNG" class="tooman"></span>
+              </div>
+              <span class="badge badge-danger p-2">43%</span>
+            </div>
+            <p id="timer text-danger" class="text-danger font-weight-bold "></p>
+          </div>
+    
+          <div class="offitem col-6 col-sm-6 col-md-6 col-lg-3">
+            <img src="assets/images/off6.webp" class="offimg">
+            <img src="assets/images/pos.png" style="width: 25px; margin-left: 160px; cursor: pointer;"  data-toggle="modal" data-target="#exampleModal">
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">محدودیت ارسال کالا</h5>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                  <p class="" style="text-align: right;">  ارسال سریع کالاهای سوپرمارکتی فقط در تهران و کرج امکان‌پذیر است.
+                    با توجه به محدودیت ارسال، آیا مایل هستید این کالا به سبد خرید شما افزوده شود؟</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" style="border:1px solid #ef4056; color: #ef4056;">خیر</button>
+                    <button type="button" class="btn " data-dismiss="modal" style="background: #ef4056; color: white;">بله</button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offcontent">
+              <div class="offcost">
+               <span class="off"> 500000 </span>
+               <span class="text-success"> 35000<img src="assets/images/toman.PNG" class="tooman"></span>
+              </div>
+              <span class="badge badge-danger p-2">43%</span>
+            </div>
+            <p id="timer text-danger" class="text-danger font-weight-bold "></p>
+          </div>
+    
+          <div class="offitem col-6 col-sm-6 col-md-6 col-lg-3">
+            <img src="assets/images/off1.webp" class="offimg">
+            <img src="assets/images/pos.png" style="width: 25px; margin-left: 160px; cursor: pointer;"  data-toggle="modal" data-target="#exampleModal">
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">محدودیت ارسال کالا</h5>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                  <p class="" style="text-align: right;">  ارسال سریع کالاهای سوپرمارکتی فقط در تهران و کرج امکان‌پذیر است.
+                    با توجه به محدودیت ارسال، آیا مایل هستید این کالا به سبد خرید شما افزوده شود؟</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" style="border:1px solid #ef4056; color: #ef4056;">خیر</button>
+                    <button type="button" class="btn " data-dismiss="modal" style="background: #ef4056; color: white;">بله</button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offcontent">
+              <div class="offcost">
+               <span class="off"> 500000 </span>
+               <span class="text-success"> 35000<img src="assets/images/toman.PNG" class="tooman"></span>
+              </div>
+              <span class="badge badge-danger p-2">43%</span>
+            </div>
+            <p id="timer text-danger" class="text-danger font-weight-bold "></p>
+          </div>
+    
+          <div class="offitem col-6 col-sm-6 col-md-6 col-lg-3 right-border">
+            <img src="assets/images/off8.webp"class="offimg">
+            <div class="offcontent">
+              <div class="offcost">
+               <span class="off"> 500000 </span>
+               <span class="text-success"> 35000<img src="assets/images/toman.PNG" class="tooman"></span>
+              </div>
+              <span class="badge badge-danger p-2">43%</span>
+            </div>
+          
+    
+          </div>
+    
+          <div class="offitem col-6 col-sm-6 col-md-6 col-lg-3">
+            <img src="assets/images/off9.webp" class="offimg">
+            <div class="offcontent">
+              <div class="offcost">
+               <span class="off"> 500000 </span>
+               <span class="text-success"> 35000<img src="assets/images/toman.PNG" class="tooman"></span>
+              </div>
+              <span class="badge badge-danger p-2">43%</span>
+            </div>
+           
+    
+          </div>
+    
+          <div class="offitem col-6 col-sm-6 col-md-6 col-lg-3 ">
+            <img src="assets/images/off10.webp" class="offimg">
+            <img src="assets/images/pos.png" style="width: 25px; margin-left: 160px; cursor: pointer;"  data-toggle="modal" data-target="#exampleModal">
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">محدودیت ارسال کالا</h5>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                  <p class="" style="text-align: right;">  ارسال سریع کالاهای سوپرمارکتی فقط در تهران و کرج امکان‌پذیر است.
+                    با توجه به محدودیت ارسال، آیا مایل هستید این کالا به سبد خرید شما افزوده شود؟</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary"  style="border:1px solid #ef4056; color: #ef4056;">خیر</button>
+                    <button type="button" class="btn " data-dismiss="modal" style="background: #ef4056; color: white;">بله</button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offcontent">
+              <div class="offcost">
+               <span class="off"> 500000 </span>
+               <span class="text-success"> 35000<img src="assets/images/toman.PNG" class="tooman"></span>
+              </div>
+              <span class="badge badge-danger p-2">43%</span>
+            </div>
+            <p id="timer text-danger" class="text-danger font-weight-bold "></p>
+          </div>
+    
+          <div class="offitem col-6 col-sm-6 col-md-6 col-lg-3">
+            <img src="assets/images/off11.jpg" class="offimg">
+            <div class="offcontent">
+              <div class="offcost">
+               <span class="off"> 500000 </span>
+               <span class="text-success"> 35000<img src="assets/images/toman.PNG" class="tooman"></span>
+              </div>
+              <span class="badge badge-danger p-2">43%</span>
+            </div>
+            <p class="timer text-danger">زمان باقی‌مانده: <span class="countdown"></span></p>
+    
+          </div>
+    
+          <div class="offitem col-6 col-sm-6 col-md-6 col-lg-3 right-border">
+            <img src="assets/images/off12.webp" class="offimg">
+            <div class="offcontent">
+              <div class="offcost">
+               <span class="off"> 500000 </span>
+               <span class="text-success"> 35000<img src="assets/images/toman.PNG" class="tooman"></span>
+              </div>
+              <span class="badge badge-danger p-2">43%</span>
+            </div>
+          
+    
+          </div>
+    
+          <div class="offitem col-6 col-sm-6 col-md-6 col-lg-3 ">
+            <img src="assets/images/off1.webp" class="offimg">
+            <img src="assets/images/pos.png" style="width: 25px; margin-left: 160px; cursor: pointer;"  data-toggle="modal" data-target="#exampleModal">
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">محدودیت ارسال کالا</h5>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                  <p class="" style="text-align: right;">  ارسال سریع کالاهای سوپرمارکتی فقط در تهران و کرج امکان‌پذیر است.
+                    با توجه به محدودیت ارسال، آیا مایل هستید این کالا به سبد خرید شما افزوده شود؟</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" style="border:1px solid #ef4056; color: #ef4056;">خیر</button>
+                    <button type="button" class="btn " data-dismiss="modal" style="background: #ef4056; color: white;">بله</button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offcontent">
+              <div class="offcost">
+               <span class="off"> 500000 </span>
+               <span class="text-success"> 35000<img src="assets/images/toman.PNG" class="tooman"></span>
+              </div>
+              <span class="badge badge-danger p-2">43%</span>
+            </div>
+            <p id="timer text-danger" class="text-danger font-weight-bold "></p>
+          </div>
+    
+          <div class="offitem col-6 col-sm-6 col-md-6 col-lg-3">
+            <img src="assets/images/off14.webp" class="offimg">
+            <div class="offcontent">
+              <div class="offcost">
+               <span class="off"> 500000 </span>
+               <span class="text-success"> 35000<img src="assets/images/toman.PNG" class="tooman"></span>
+              </div>
+              <span class="badge badge-danger p-2">43%</span>
+            </div>
+           
+    
+          </div>
+    
+        <div class="offitem col-6 col-sm-6 col-md-6 col-lg-3">
+            <img src="assets/images/off2.webp" class="offimg">
+            <div class="offcontent">
+              <div class="offcost">
+               <span class="off"> 500000 </span>
+               <span class="text-success"> 35000<img src="assets/images/toman.PNG" class="tooman"></span>
+              </div>
+              <span class="badge badge-danger p-2">43%</span>
+            </div>
+         </div> 
+            
+    
+          </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      </div>
+
+
+
+      <div class="mag">
+        <div class="magcontent">
+          <span class="font-weight-bold">خواندنی</span>
+          <span class="text-primary">مطالب بیشتر در دیجی کالا مگ <i class="fas fa-angle-left text-primary"></i></span>
+        </div>
+
+       
+      <div class="cardcontainer">
+    
+        <div class="row">
+      <div class="card col-lg-3 col-md-6 col-sm-6 col-12">
+        <img class="card-img-top" src="assets/images/mag2.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">آینده‌ی شگفت‌انگیز فناوری کوانتوم چگونه خواهد بود؟ (زیرنویس فارسی)</p>
+        </div>
+      </div>
+      <div class="card col-lg-3 col-md-6 col-sm-6 col-12">
+        <img class="card-img-top" src="assets/images/mag5.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">۶ کاور برتر پوکو F5؛ محافظان گوشی تازه‌نفس شیائومی</p>
+        </div>
+      </div>
+      <div class="card col-lg-3 col-md-6 col-sm-6 col-12">
+        <img class="card-img-top" src="assets/images/mag4.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">بررسی هندزفری جی‌بی‌ال Tune 110؛ ارزان‌قیمت و ارزش خرید بالا</p>
+        </div>
+      </div>
+      <div class="card col-lg-3 col-md-6 col-sm-6 col-12">
+        <img class="card-img-top" src="assets/images/mag1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">پرینتر جوهر افشان چطور کار می‌کند؟</p>
+        </div>
+      </div>
+
+
+     </div>
+
+
+      </div>
+
+
+
+
+      </div>
+
+
+</div>
+
+
+</main>
+
+
+<footer>
+
+<div class="footer">
+  <hr>
+  <div class="support">
+  
+    <div class="supportcontent">
+      <img src="assets/images/digi2.svg">
+      <p style="text-align: right;">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱
+        |
+        ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</p>
+    </div>
+  
+    <a href="#" class="to-top ">بازگشت به بالا</a>
+  </div>
+
+  <div class="footeritems d-none d-md-flex">
+    <div class="footeritem">
+      <img src="assets/images/f1.svg">
+      <span>امکان تحویل اکسپرس</span>
+    </div>
+    <div class="footeritem">
+      <img src="assets/images/f5.svg">
+      <span>ضمانت اصل بودن کالا</span>
+    </div>
+   
+    <div class="footeritem">
+      <img src="assets/images/f2.svg">
+      <span>7روز هفته، 24ساعته</span>
+    </div>
+    <div class="footeritem">
+      <img src="assets/images/f3.svg">
+      <span> هفت روز ضمانت بازگشت کالا</span>
+    </div>
+    <div class="footeritem">
+      <img src="assets/images/f4.svg">
+      <span>ضمانت اصل بودن کالا</span>
+    </div>
+  
+  </div>
+
+  <div class="footercontent">
+  
+    <div class="firstrow">
+      <p class="font-weight-bold">با دیجی‌کالا</p>
+      <p class="text-secondary">اتاق خبر دیجی‌کالا</p>
+      <p class="text-secondary">فروش در دیجی‌کالا</p>
+      <p class="text-secondary">فرصت‌های شغلی</p>
+      <p class="text-secondary">گزارش تخلف در دیجی‌کالا</p>
+    </div>
+    <div class="secrow">
+      <p class="font-weight-bold">خدمات مشتریان</p>
+      <p class="text-secondary">پاسخ به پرسش‌های متداول</p>
+      <p class="text-secondary">رویه‌های بازگرداندن کالا</p>
+      <p class="text-secondary">شرایط استفاده</p>
+      <p class="text-secondary">حریم خصوصی</p>
+    </div>
+    
+    <div class="thirdrow">
+      <p class="font-weight-bold">راهنمای خرید از دیجی‌کالا</p>
+      <p class="text-secondary">نحوه ثبت سفارش</p>
+      <p class="text-secondary">رویه ارسال سفارش</p>
+      <p class="text-secondary">شیوه‌های پرداخت</p>
+      <p class="text-secondary">نحوه ثبت سفارش</p>
+      <p class="text-secondary">همراه ما باشید</p>
+    </div>
+    
+    <div class="social">
+      <h4>با ما همراه باشید!</h4>
+    
+      <div class="socialitems">
+        <img src="assets/images/facebook_icon.png">
+    
+        <img src="assets/images/instagram_icon.png">
+        <img src="assets/images/linkdin_logo_communication_social media_chat_icon.png">
+        <img src="assets/images/twitter_bird_icon.png">
+    
+      </div>
+      <div class="email">
+      <h5>با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید</h5>
+      <input type="email" placeholder="ایمیل شما">
+      <button>ثبت</button>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    </div>
+    
+
+
+  
+    
+    
+    
+    
+    
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="assets/js/script.js"></script>
+<script src="assets/js/all.min.js"></script>
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="assets/js/grid.js"></script>
+</body>
+</html>

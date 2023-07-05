@@ -1,0 +1,330 @@
+body {
+    direction: rtl;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 1024px){
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+    
+    
+    }
+
+    .log {
+        border: 1px solid rgb(212, 210, 210);
+        margin: 8px;
+        padding: 7px;
+        border-radius: 10px;
+        text-decoration: none;
+        
+    }
+    .log a:hover {
+        text-decoration: none;
+    }
+    .log a {
+        color: rgb(151, 151, 151);
+    }
+    .arrow {
+        font-size: 18px;
+        color: rgb(151, 151, 151);
+    }
+    .bag {
+        margin-right: 5px;
+    }
+    .logo {
+        width: 110px;
+        height: 35px;
+       margin-top: 16px;
+  
+    }
+    .shopicon-container {
+        margin: 15px 0;
+    }
+    .citycontainer {
+        float: left;
+        margin-top: 5px;
+    }
+    .fa-times {
+      display: none;
+    }
+    /* .marketcontainer {
+      width: 100%;
+    }
+    
+    .supermarket{
+      width: 100%;
+    } */
+}
+
+
+
+
+
+
+
+
+
+/* header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+.submenu {
+  display: none;
+}
+
+.nav-container {
+  display: flex;
+
+
+} */
+
+@media screen and (max-width: 1024px) {
+  .bannertop {
+    position: fixed;
+    top: 0;
+    z-index: 1555;
+  }
+  header {
+    position: fixed;
+    top: 25px;
+  }
+  .shop-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .shop-container img{
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .slider .controls .next,
+.slider .controls .prev {
+  top: 40%;
+}
+.slider {
+  width: 100%;
+  height: 300px;
+}
+.slider img {
+  width: 100%;
+  height: 250px;
+}
+.marketcontainer {
+ min-width: 100%;
+}
+.supermarket img {
+  width: 100%;
+}
+
+.shop-container{
+  width: 100%;
+}
+
+.fa-times {
+ z-index: 1;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+#shopiconCo {
+  display: none;
+}
+
+}
+
+@media screen and (max-width: 992px) {
+#submenu {
+  display: none;
+
+}
+
+#menu-one {
+  display: none;
+
+}
+
+#navbar {
+  display:block;
+  z-index: 20;
+  position: fixed;
+  background: white;
+  width: -500px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  text-align: right;
+  padding: 20px;
+  transition: all .2s ease-in;
+  transform: translateX(-500px);
+}
+/* #navbar  {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: right;
+  width: 100%;
+  margin-top: 30px;
+} */
+#navbar li {
+  padding: 25px 10px;
+  font-size: 1.2rem;
+  color: #000;
+  transition: all 1s ease-in-out;
+}
+#navbar img{
+ width: 25px;
+ height: 25px;
+}
+#navbar li:hover {
+ background: rgb(238, 235, 235);
+}
+
+#navbar .drop-one {
+margin-left: 155px;
+}
+
+#navbar .fa-times {
+  display: block;
+  top: 15px;
+  right: 0;
+  color: #000;
+  z-index: 10;
+}
+  .footercontent {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footercontent>div {
+   text-align: center;
+   margin: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+ .slider {
+  width: 100%;
+ }
+.slider-items {
+  width: 100%;
+  object-fit: cover;
+}
+
+section .thumbnail {
+height: 300px;
+}
+
+section .thumbnail img {
+  width: 80px;
+  height: 80px;
+}
+section .thumbnail .product-details h2{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+section .thumbnail .product-details p{
+  font-size: 15px;
+  padding-bottom: 15px;
+  color: green;
+  font-weight: 700;
+  padding-top: .5rem;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-container {
+width: 80px;
+}
+
+.category-item a  {
+  font-size: 12px;
+}
+
+.container-b .thumbnail-brand img{
+width: 80px;
+height: 80px;
+}
+
+.brand-img {
+  width: 80px;
+height: 80px;
+}
+
+
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+.logo-container {
+  width: 100px;
+}
+
+.searchcontainer {
+  width: 800px;
+}
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  .firstrow,.secrow,.thirdrow {
+    display: none;
+  }
+  .social {
+    display: block;
+    width: 100%;
+  }
+  .social input {
+    width: 400px;
+  }
+  .social .email h5 {
+    text-align: center;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 992px) {
+
+  .submenu {
+    display: none;
+  }
+
+  .footercontent {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footercontent>div {
+   text-align: center;
+   margin: 15px;
+  }
+
+}
+
+
+@media only screen and (max-width: 440px) {
+#searchco {
+  width: 70%;
+}
+}
+
+@media only screen and (max-width: 540px) {
+  #searchco {
+    width: 70%;
+  }
+}
